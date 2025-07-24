@@ -10,11 +10,7 @@
         font-family: "Helvetica Neue", Arial, sans-serif;
         line-height: 1.6;
         color: #444;
-        padding: 40px 20px;
-        width: 800px;
-        max-width: 800px;
         margin: auto;
-        background-color: #f9f9f9;
       }
 
       h1,
@@ -52,9 +48,20 @@
         text-decoration: underline;
       }
 
+      table {
+        table-layout: auto;
+        width: 100%;
+      }
+
       td {
-        width: 50%;
-        vertical-align: top;
+        word-wrap: break-all;
+        line-break: auto;
+        max-width: none;
+        max-width: 100px;
+      }
+
+      td:nth-child(even) {
+        max-width: 20%;
       }
 
       li {
@@ -69,8 +76,6 @@
       .container {
         background-color: #fff;
         padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       }
     </style>
   </head>
@@ -173,7 +178,7 @@
           </tr>
           <tr>
             <td>
-              <strong>Data Processing/Processing</strong>
+              <strong>Data Processing/<br />Processing</strong>
             </td>
             <td>
               The methods used to collect and process a User's Personal Data on
